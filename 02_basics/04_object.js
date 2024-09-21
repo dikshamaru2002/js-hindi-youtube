@@ -74,9 +74,9 @@ const {courseInstructor:instructor} = course
 
 // **************** API's *******************
 {
-"name": "diksha",
-"coursename":"js in hindi",
-"price":"free"
+// "name": "diksha",
+// "coursename":"js in hindi",
+// "price":"free"
 }
 
 

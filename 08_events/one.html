@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Events</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing Image</h2>
+<div>
+    <ul id="images">
+        <li><img width="" id="" src="" alt="" ></li>
+        <li><a href="#" id="owl"> Demo text</a> </li><!-- // this approch is works but it create a problem on some time it's not an
+        // easable approch it create a problem on scal time so avode this aproch and dont enject it in html -->
+        <li><img width="" id="" src="C:\medicare\img\backgorund-img.jpg" alt=""></li>
+        <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+    </ul>
+</div>
+</body>
+<script>
+    // java script is a sequencialy run language
+    // document.getElementsById('owl').onclick = function (){
+    // alert('owl clicked')
+// }
+document.getElementById('owl').addEventListener('click',function(){
+    alert('owl clicked again')
+    //attachEvent()
+    // jQuery - on  event lisner
+})
+    document.getElementById('owl').addEventListener('click', function(e){
+        console.log(e);
+    },false)
+    //type,timestamp,defaultPrevented 
+    //target,toElement, srcElement,currentTarget,
+    //clientX, clientY, screenX, ScreenY
+    //altkey,ctrlkey,shiftkey, keyCode
+
+document.getElementById('images').addEventListener('click', function(e){
+console.log("clicked inside the ul");
+},false)
+document.getElementById('owl').addEventListener('click', function(e){
+console.log("owl clicked");
+},false)
+
+</script>
+</html>

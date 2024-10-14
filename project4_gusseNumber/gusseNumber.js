@@ -91,3 +91,7 @@ const randomNumber = parseInt(Math.random()*100 + 1);
   playGame = true
  })
   }
+
+
+
+  //react is a core faundational library which is use to take take all the Refrences
